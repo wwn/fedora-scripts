@@ -12,5 +12,5 @@ echo 'potentially unneeded packages:'
 dnf repoquery --installed --qf "%{NAME}-%{VERSION}-%{RELEASE}.%{ARCH}" --unneeded
 
 ## Flatpack
-# flatpak list --app
-# flatpak update
+flatpak list --app
+flatpak update -y --noninteractive
